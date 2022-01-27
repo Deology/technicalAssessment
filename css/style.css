@@ -1,0 +1,312 @@
+@font-face {
+  font-family: avenirNextBold;
+  src: url(../fonts/avenir-next-bold.ttf);
+}
+@font-face {
+  font-family: avenirHeavy;
+  src: url(../fonts/Avenir-Heavy.ttf);
+}
+@font-face {
+  font-family: avenirMedium;
+  src: url(../fonts/Avenir-Medium.ttf);
+}
+@font-face {
+  font-family: avenirLight;
+  src: url(../fonts/Avenir-Light.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: avenirHeavy !important;
+}
+
+h1 {
+  font-size: 1.7em !important;
+}
+
+p {
+  font-family: avenirMedium !important;
+}
+
+.grey {
+  background-color: #fafafa;
+}
+
+.navbar {
+  background: #fff;
+  display: flex;
+}
+
+.navbar p {
+  color: #e75625;
+  font-family: avenirHeavy !important;
+  padding: 1em 0 0 5em !important;
+}
+
+.navbar-nav {
+  list-style: none;
+}
+
+.navbar-nav a {
+  font-family: avenirHeavy !important;
+  color: #000;
+  padding-top: 0.2em !important;
+}
+
+.navbar-nav img {
+  margin-right: 0.7em;
+}
+
+.dropdown-menu {
+  padding: 1em 1.5em !important;
+  left: -65px !important;
+}
+.navbar-collapse {
+  /* padding-right: 15px; */
+  padding-left: 50em !important;
+}
+
+.open > .dropdown-menu {
+  display: grid !important;
+}
+.main {
+  background-color: #e75625 !important;
+  color: #fff !important;
+  padding: 0.5em 1em !important;
+}
+
+.expand {
+  margin-left: 1em !important;
+}
+
+.main:hover .expand {
+  transform: scale(1.1) !important
+  ;
+}
+
+.default-button {
+  color: #e75625;
+  background: transparent;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  font-family: avenirHeavy !important;
+  font-size: 1.2em;
+  border: 0.1em solid #e75625;
+}
+
+.default-button:hover {
+  color: white;
+  background: #e75625;
+  transition: 0.5s ease-in-out;
+}
+
+.selected {
+  background: #e75625 !important;
+  color: #fff !important;
+}
+
+.selected::after {
+  content: "";
+}
+
+.card {
+  border: 2px solid transparent;
+  margin: 3em 0 !important;
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 3em 3em;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.trials {
+  margin-top: 5em;
+}
+
+.trials h2 {
+  font-size: 1.8em;
+}
+
+.rounded-circle {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2em;
+}
+
+.card h1 {
+  font-size: 2em;
+}
+
+.card img {
+  width: 90%;
+  vertical-align: super;
+}
+
+.top {
+  display: flex;
+  align-content: center;
+  align-items: end;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.courses {
+  display: flex;
+  align-content: center;
+  align-items: end;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.courses:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+.border {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
+  margin-bottom: 0em !important;
+  margin-top: 2em !important;
+}
+
+.border h4 {
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+.mobile-image img,
+.engineer-image img {
+  width: 75%;
+}
+.first-column h4 span {
+  font-family: avenirLight;
+}
+
+.first-column {
+  margin-bottom: 5em;
+}
+.second-column h2 {
+  font-size: 1.5em;
+  margin: 2.5em 0 1em;
+}
+
+.second-column p {
+  font-size: 1.1em;
+}
+
+.second-column span {
+  font-size: 2.5em;
+  color: #e75625;
+  font-family: avenirHeavy;
+  padding-right: 0.5em;
+}
+
+.knowledge button,
+.stack button {
+  width: 100%;
+}
+
+.knowledge,
+.stack,
+.information {
+  display: flex;
+}
+
+.mobile-text p {
+  color: black !important;
+}
+@media (min-width: 768px) {
+  .col-sm-4 {
+    width: 33.333333% !important;
+    margin-left: 5em;
+  }
+  .col-sm-8 {
+    width: 60.666667% !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar-brand {
+    padding: 15px 10px !important;
+  }
+
+  .navbar-nav > li > a {
+    margin-left: 1.2em !important;
+  }
+
+  ul.navbar-nav {
+    padding: 0 !important;
+  }
+
+  .navbar-nav img {
+    margin-right: 0;
+  }
+
+  .navbar-header {
+    display: flex;
+  }
+  .navbar p {
+    color: black;
+    font-family: avenirHeavy !important;
+    padding: 1em 0 0 0em !important;
+  }
+
+  .navbar-collapse {
+    padding-right: 0 !important;
+  }
+  .dropdown-menu {
+    min-width: 100px;
+  }
+  .card h1 {
+    font-size: 1.5em !important;
+    margin-top: 0 !important;
+  }
+  .default-button {
+    font-size: 1em !important;
+    width: 100%;
+  }
+  .top {
+    align-items: flex-start !important;
+  }
+  .knowledge,
+  .stack,
+  .information {
+    display: block;
+  }
+  .border h4 {
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+  }
+  .second-column {
+    margin: 0em 2em !important;
+  }
+  .trials {
+    margin: 0 2em;
+    margin-top: 5em;
+  }
+  .desktop-text {
+    display: none;
+  }
+  .collapse {
+    display: flex !important;
+  }
+
+  .navbar-collapse {
+    /* padding-right: 15px; */
+    padding-left: 0em !important;
+  }
+
+  .navbar-nav {
+    margin: 7.5px 0px !important;
+  }
+}
+
+@media (min-width: 550px) {
+  .mobile-text {
+    display: none;
+  }
+}
